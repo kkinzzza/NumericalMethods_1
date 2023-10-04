@@ -46,8 +46,9 @@ spline2 = make_interp_spline(xch, ych)
 Y2 = spline2(X2)
 
 
-plt.plot(X1, Y1, color='blue')
-plt.plot(X2, Y2, color='red')
+plt.plot(X1, Y1, color='blue', label='Функция')
+plt.plot(X2, Y2, color='red', label='Аппроксимация')
+plt.legend()
 plt.xlabel(r'$x$')
 plt.ylabel(r'$y$')
 plt.title('Интерполяционный полином в форме Лагранжа \n по сетке-корням полинома Чебышева')
